@@ -1,0 +1,31 @@
+[project]
+name = "cruft-cookiecutter-sample"
+version = "1.0.0"
+description = "Community cookiecutter template for Python APIs and Packages"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cookiecutter>=2.6.0",
+    "cruft>=2.15.0",
+    "hatchling>=1.27.0",
+]
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+dev = [
+    "commitizen>=4.9.1",
+    "hatchling>=1.27.0",
+    "pre-commit>=4.2.0",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+    "pytest-cov>=6.2.1",
+    "ruff>=0.12.3",
+]
+
+[[tool.uv.index]]
+name = "artifactory"
+url = "https://artifactory.insim.biz/artifactory/api/pypi/nn-py-pypi-org/simple/"
+default = true
