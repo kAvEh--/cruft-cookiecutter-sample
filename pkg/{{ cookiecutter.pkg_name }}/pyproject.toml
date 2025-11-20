@@ -1,0 +1,8 @@
+[project]
+name = "{{ cookiecutter.pkg_name }}"
+description = "{{ cookiecutter.pkg_name }}"
+requires-python = ">=3.12"
+readme = "README.md"
+dependencies = [
+    "fastapi>=0.116.1",
+]
